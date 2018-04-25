@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.grid-checkbox:checked+.grid-side {
+  background: #fff;
+}
+
+@media (min-width: 768px) {
+	.grid-checkbox:checked+.grid-side {
+		background: none;
+	}
+}
